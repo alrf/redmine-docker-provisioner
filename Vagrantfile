@@ -13,8 +13,8 @@ Vagrant.configure("2") do |config|
   config.vm.define "mysql" do |mysql|
     mysql.vm.provision "docker" do |d|
 #      d.name = "my-mysql"
-      d.build_image = "docker/mysql"
-      d.run = "docker/mysql",
+      d.build_image "docker/mysql"
+      d.run "docker/mysql",
         args: "-e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=redmine -e MYSQL_USER=redmine -e MYSQL_PASSWORD=redmine"
 
 #        cmd: "bash -l",
