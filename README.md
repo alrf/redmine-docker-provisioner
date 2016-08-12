@@ -9,4 +9,4 @@ This repo based on original redmine repo.
 Only Vagrantfile and docker directory have been added.  
 
 # Requirements  
-Vagrant, Virtualbox should be installed  
+Vagrant >= 1.8.1, Virtualbox should be installed  
