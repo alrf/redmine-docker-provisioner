@@ -2,7 +2,7 @@
 
 set -e
 
-REDMINE_SRC='/home/redmine/src'
+export REDMINE_SRC='/home/redmine/src'
 chown -R redmine.redmine $REDMINE_SRC
 
 
